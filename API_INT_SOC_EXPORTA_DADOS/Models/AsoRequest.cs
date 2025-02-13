@@ -2,8 +2,10 @@
 
 namespace API_INT_SOC_EXPORTA_DADOS.Models
 {
-    public class AsoPeriodo
+    public class AsoRequest
     {
+        [Required]
+        public string? cpf { get; set; }
         [Required]
         public string? empresa { get; set; }
         [Required]

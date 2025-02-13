@@ -18,7 +18,7 @@ namespace API_INT_SOC_EXPORTA_DADOS.Controllers
         }
 
         [HttpPost("buscarAsoPorPeriodo")]
-        public async Task<IActionResult> BuscarAsoPorPeriodo([FromBody] AsoPeriodo parametros)
+        public async Task<IActionResult> BuscarAsoPorPeriodo([FromBody] AsoRequest parametros)
         {
             try
             {

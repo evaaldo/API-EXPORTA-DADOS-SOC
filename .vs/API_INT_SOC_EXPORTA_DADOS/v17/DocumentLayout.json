@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\models\\asorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\models\\asorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\controllers\\soccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\controllers\\soccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\models\\asoperiodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\models\\asoperiodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\services\\socservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\services\\socservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|c:\\users\\evaldo profec\\source\\repos\\api_int_soc_exporta_dados\\api_int_soc_exporta_dados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68B2F53C-4602-4DB2-B57B-E3EFB1096295}|API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS.csproj|solutionrelative:api_int_soc_exporta_dados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SocService.cs",
               "DocumentMoniker": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Services\\SocService.cs",
               "RelativeDocumentMoniker": "API_INT_SOC_EXPORTA_DADOS\\Services\\SocService.cs",
               "ToolTip": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Services\\SocService.cs",
               "RelativeToolTip": "API_INT_SOC_EXPORTA_DADOS\\Services\\SocService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T17:24:05.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SocController.cs",
               "DocumentMoniker": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Controllers\\SocController.cs",
               "RelativeDocumentMoniker": "API_INT_SOC_EXPORTA_DADOS\\Controllers\\SocController.cs",
               "ToolTip": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Controllers\\SocController.cs",
               "RelativeToolTip": "API_INT_SOC_EXPORTA_DADOS\\Controllers\\SocController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T16:53:34.932Z",
               "EditorCaption": ""
@@ -57,19 +57,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AsoPeriodo.cs",
-              "DocumentMoniker": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Models\\AsoPeriodo.cs",
-              "RelativeDocumentMoniker": "API_INT_SOC_EXPORTA_DADOS\\Models\\AsoPeriodo.cs",
-              "ToolTip": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Models\\AsoPeriodo.cs",
-              "RelativeToolTip": "API_INT_SOC_EXPORTA_DADOS\\Models\\AsoPeriodo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
+              "Title": "AsoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Models\\AsoRequest.cs",
+              "RelativeDocumentMoniker": "API_INT_SOC_EXPORTA_DADOS\\Models\\AsoRequest.cs",
+              "ToolTip": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Models\\AsoRequest.cs",
+              "RelativeToolTip": "API_INT_SOC_EXPORTA_DADOS\\Models\\AsoRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T17:02:52.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Evaldo Profec\\source\\repos\\API_INT_SOC_EXPORTA_DADOS\\API_INT_SOC_EXPORTA_DADOS\\Program.cs",
               "RelativeDocumentMoniker": "API_INT_SOC_EXPORTA_DADOS\\Program.cs",

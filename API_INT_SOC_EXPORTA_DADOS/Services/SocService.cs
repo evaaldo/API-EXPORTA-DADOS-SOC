@@ -13,29 +13,9 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
             _logger = logger;
         }
 
-        public async Task<string> BuscarAsoPorPeriodo(AsoPeriodo parametros)
+        public async Task<string?> BuscarAsoPorPeriodo(AsoRequest parametros)
         {
-            string soapXml = $@"
-                <soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:ser=""http://services.soc.age.com/"">
-                    <soapenv:Header/>
-                    <soapenv:Body>
-                        <ser:exportaDadosWs>
-                            <arg0>
-                                <arquivo></arquivo>
-                                <campoLivre1></campoLivre1>
-                                <campoLivre2></campoLivre2>
-                                <campoLivre3></campoLivre3>
-                                <campoLivre4></campoLivre4>
-                                <campoLivre5></campoLivre5>
-                                <erro></erro>
-                                <mensagemErro></mensagemErro>
-                                <parametros>{System.Text.Json.JsonSerializer.Serialize(parametros)}</parametros>
-                                <retorno></retorno>
-                                <tipoArquivoRetorno>xml</tipoArquivoRetorno>
-                            </arg0>
-                        </ser:exportaDadosWs>
-                    </soapenv:Body>
-                </soapenv:Envelope>";
+            string soapXml = GerarSoapRequest(parametros);
 
             using (var client = new HttpClient())
             {
@@ -56,13 +36,34 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
 
                     if (erroTag != null && erroTag.Value.Trim().ToLower() == "false")
                     {
-                        _logger.LogInformation("Status da requisição para o SOC: 200");
-                        return responseString;
+                        var retornoTag = xml.Descendants().FirstOrDefault(x => x.Name.LocalName == "retorno");
+                        var retornoXmlString = System.Web.HttpUtility.HtmlDecode(retornoTag.Value);
+                        var retornoXml = XDocument.Parse(retornoXmlString);
+
+                        var records = retornoXml.Descendants("record")
+                            .Select(record => new
+                            {
+                                CPF = record.Element("CPFFUNCIONARIO")?.Value,
+                                Nome = record.Element("NOMEFUNCIONARIO")?.Value,
+                                TPASO = record.Element("TPASO")?.Value,
+                                DataASO = record.Element("DTASO")?.Value,
+                                DATAFICHA = record.Element("DATAFICHA")?.Value,
+                                CRM = record.Element("CRM")?.Value,
+                                UF = record.Element("UF")?.Value
+                            }).ToList().Where(x => x.TPASO == "5" || x.TPASO == "2").Where(x => x.CPF == parametros.cpf);
+
+                        if (!records.Any())
+                        {
+                            return "Não existe nenhum exame para o período e CPF informados";
+                        }
+
+                        return System.Text.Json.JsonSerializer.Serialize(records);
                     }
                     else
                     {
-                        _logger.LogError("Houve um erro na requisição com o SOC. Verifique os parâmetros passados.");
-                        return "erro";
+                        var messageErroTag = xml.Descendants().FirstOrDefault(x => x.Name.LocalName == "mensagemErro");
+                        _logger.LogError("Houve um erro na requisição com o SOC. Erro: " + messageErroTag?.Value.Trim());
+                        return messageErroTag?.Value.Trim();
                     }
                 }
                 else
@@ -70,6 +71,31 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
                     throw new Exception("Erro ao realizar requisição SOAP.");
                 }
             };
+        }
+
+        private static string GerarSoapRequest(AsoRequest parametros)
+        {
+            return $@"
+            <soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:ser=""http://services.soc.age.com/"">
+                <soapenv:Header/>
+                <soapenv:Body>
+                    <ser:exportaDadosWs>
+                        <arg0>
+                            <arquivo></arquivo>
+                            <campoLivre1></campoLivre1>
+                            <campoLivre2></campoLivre2>
+                            <campoLivre3></campoLivre3>
+                            <campoLivre4></campoLivre4>
+                            <campoLivre5></campoLivre5>
+                            <erro></erro>
+                            <mensagemErro></mensagemErro>
+                            <parametros>{System.Text.Json.JsonSerializer.Serialize(parametros)}</parametros>
+                            <retorno></retorno>
+                            <tipoArquivoRetorno>xml</tipoArquivoRetorno>
+                        </arg0>
+                    </ser:exportaDadosWs>
+                </soapenv:Body>
+            </soapenv:Envelope>";
         }
     }
 }
