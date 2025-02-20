@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_INT_SOC_EXPORTA_DADOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f84c74a01577e953fb79644317a4c3699dbfa406")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_INT_SOC_EXPORTA_DADOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_INT_SOC_EXPORTA_DADOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

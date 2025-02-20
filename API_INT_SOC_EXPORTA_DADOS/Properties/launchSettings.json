@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
@@ -9,20 +9,22 @@
     }
   },
   "profiles": {
-    "API_INT_SOC_EXPORTA_DADOS": {
+    "PRODUÇÃO": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7048;http://localhost:5054",
+      "applicationUrl": "https://localhost:6000;http://localhost:6001",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
-    "IIS Express": {
-      "commandName": "IISExpress",
+    "DESENVOLVIMENTO": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5005;http://localhost:5006",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

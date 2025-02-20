@@ -7,10 +7,12 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
     public class SocService
     {
         private readonly ILogger<SocService> _logger;
+        private readonly IConfiguration _configuration;
 
-        public SocService(ILogger<SocService> logger)
+        public SocService(ILogger<SocService> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
         }
 
         public async Task<string?> BuscarAsoPorPeriodo(AsoRequest parametros)
@@ -19,7 +21,7 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
 
             using (var client = new HttpClient())
             {
-                var url = "https://www.p-soc.com.br/WSSoc/services/ExportaDadosWs";
+                var url = _configuration["Wsdl"] ?? throw new Exception("Wsdl não encontrado");
 
                 var content = new StringContent(soapXml, Encoding.UTF8, "text/xml");
 
@@ -46,15 +48,16 @@ namespace API_INT_SOC_EXPORTA_DADOS.Services
                                 CPF = record.Element("CPFFUNCIONARIO")?.Value,
                                 Nome = record.Element("NOMEFUNCIONARIO")?.Value,
                                 TPASO = record.Element("TPASO")?.Value,
+                                CODPARECERASO = record.Element("CODPARECERASO")?.Value,
                                 DataASO = record.Element("DTASO")?.Value,
                                 DATAFICHA = record.Element("DATAFICHA")?.Value,
                                 CRM = record.Element("CRM")?.Value,
                                 UF = record.Element("UF")?.Value
-                            }).ToList().Where(x => x.TPASO == "5" || x.TPASO == "2").Where(x => x.CPF == parametros.cpf);
+                            }).ToList().Where(x => x.CPF == parametros.cpf).Where(x => x.TPASO == "5" || x.TPASO == "2").Where(x => x.CODPARECERASO == "1");
 
                         if (!records.Any())
                         {
-                            return "Não existe nenhum exame para o período e CPF informados";
+                            return "Não existe nenhum exame demissional ou periódico com OK para o período e CPF informados";
                         }
 
                         return System.Text.Json.JsonSerializer.Serialize(records);
