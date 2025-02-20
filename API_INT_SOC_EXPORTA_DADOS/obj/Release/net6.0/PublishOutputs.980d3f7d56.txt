@@ -1,6 +1,7 @@
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\API_INT_SOC_EXPORTA_DADOS.exe
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\appsettings.Production.json
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\API_INT_SOC_EXPORTA_DADOS.dll
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\API_INT_SOC_EXPORTA_DADOS.deps.json
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\PubTmp\Out\API_INT_SOC_EXPORTA_DADOS.runtimeconfig.json

@@ -31,3 +31,4 @@ C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORT
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\obj\Release\net6.0\API_INT_SOC_EXPORTA_DADOS.sourcelink.json
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\bin\Release\net6.0\appsettings.Production.json
 C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\bin\Release\net6.0\appsettings.Development.json
+C:\Users\Evaldo Profec\source\repos\API_INT_SOC_EXPORTA_DADOS\API_INT_SOC_EXPORTA_DADOS\bin\Release\net6.0\appsettings.json
